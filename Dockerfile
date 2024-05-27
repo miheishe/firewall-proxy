@@ -9,7 +9,7 @@ RUN apt-get update && apt-get install -y \
 
 COPY squid.conf /etc/squid/squid.conf
 COPY ip_list.txt /usr/local/bin/ip_list.txt
-COPY allowed_ips.txt /etc/squid/allowed_hosts.txt
+COPY allowed_hosts.txt /etc/squid/allowed_hosts.txt
 COPY entrypoint.sh /usr/local/bin/entrypoint.sh
 
 RUN chmod +x /usr/local/bin/entrypoint.sh
